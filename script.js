@@ -2,7 +2,7 @@
 
 function speak(text) {
     let text_speak = new SpeechSynthesisUtterance(text)
-    text_speak.rate = 0.7
+    text_speak.rate = 1
     text_speak.pitch = 1
     text_speak.volume = 1
     text_speak.lang="en-GB"
@@ -55,7 +55,7 @@ function takeCommand(message) {
         speak("hello sir , how can i help you")
     }
     else if (message.includes("tell me about yourself")) {
-        speak("i am virtual assistant ,created by Ttusssshaaarrr gupta")
+        speak("i am virtual assistant ,created by Tuusssharr gupta")
     }
     else if (message.includes("youtube")) {
         speak("opening...youtube")
